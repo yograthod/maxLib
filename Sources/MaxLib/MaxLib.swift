@@ -8,4 +8,9 @@ public struct MaxLib {
     public func helloWorld() {
         print("Hello, World!")
     }
+    
+    public func addition()
+    {
+        print("addition")
+    }
 }
