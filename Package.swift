@@ -10,8 +10,8 @@ let package = Package(
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "MaxLib",targets: ["MaxLib"]),
-//        .library(name: "maxFramework", targets: ["maxFramework"]),
+        .library(name: "MaxLib",targets: ["maxFramework"]),
+        .library(name: "maxFramework", targets: ["maxFramework"]),
 //        .library(name: "maxFrameworkLocal", targets: ["maxFrameworkLocal"])
         
     ],
@@ -22,15 +22,14 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(name: "MaxLib"),
+        .binaryTarget(
+                   name: "maxFramework",
+                   url:"https://drive.google.com/file/d/1SXhRlhamver9uX-BaqumXGZz5TzHcCXl/view?usp=drive_link/maxFramework.xcframework.zip",
+                   checksum: "1ce79dc9509768e55be9301639631b446c769e322d7abe4670297ac53ab66b1d"
+               ),
 //        .binaryTarget(
-//                   name: "maxFramework",
-//                   url:"https://drive.google.com/file/d/1y5mrtAaAA37m-jsJJT_u8_0ttF4eG_QN/view?usp=drive_link/maxFramework.xcframework.zip",
-//                   checksum: "1ce79dc9509768e55be9301639631b446c769e322d7abe4670297ac53ab66b1d"
-//               ),
-//        .binaryTarget(
-//                    name: "maxFrameworkLocal",
-//                    path: "./Desktop/maxFramework/maxFramework.xcframework.zip"
-//                ),
-        .testTarget(name: "MaxLibTests",dependencies: ["MaxLib"]),
+//                    name: "maxFramework",
+//                    path: "./Sources/maxFramework.xcframework"
+//                )
     ]
 )
