@@ -11,15 +11,26 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(name: "MaxLib",targets: ["MaxLib"]),
+//        .library(name: "maxFramework", targets: ["maxFramework"]),
+//        .library(name: "maxFrameworkLocal", targets: ["maxFrameworkLocal"])
         
     ],
     dependencies: [
             /// Define the Mocker dependency:
-        .package(path: "/Users/spectra-ios/Desktop/maxFramework/maxFramework.xcframework")
         ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "maxFramework", path: "/Users/spectra-ios/Desktop/maxFramework/maxFramework.xcframework")
+        .target(name: "MaxLib"),
+//        .binaryTarget(
+//                   name: "maxFramework",
+//                   url:"https://drive.google.com/file/d/1y5mrtAaAA37m-jsJJT_u8_0ttF4eG_QN/view?usp=drive_link/maxFramework.xcframework.zip",
+//                   checksum: "1ce79dc9509768e55be9301639631b446c769e322d7abe4670297ac53ab66b1d"
+//               ),
+//        .binaryTarget(
+//                    name: "maxFrameworkLocal",
+//                    path: "./Desktop/maxFramework/maxFramework.xcframework.zip"
+//                ),
+        .testTarget(name: "MaxLibTests",dependencies: ["MaxLib"]),
     ]
 )
