@@ -11,7 +11,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(name: "MaxLib",targets: ["maxFramework"]),
-        .library(name: "maxFramework", targets: ["maxFramework"]),
+        //.library(name: "maxFramework", targets: ["maxFramework"]),
 //        .library(name: "maxFrameworkLocal", targets: ["maxFrameworkLocal"])
         
     ],
@@ -24,8 +24,8 @@ let package = Package(
         .target(name: "MaxLib"),
         .binaryTarget(
                    name: "maxFramework",
-                   url:"https://drive.google.com/file/d/1SXhRlhamver9uX-BaqumXGZz5TzHcCXl/view?usp=drive_link/maxFramework.xcframework.zip",
-                   checksum: "1ce79dc9509768e55be9301639631b446c769e322d7abe4670297ac53ab66b1d"
+                   url:"https://drive.google.com/file/d/1DE7kHG9NMlRD4mUJ-T7bdU8EFUCAi8bL/view?usp=drive_link/maxFramework.xcframework.zip",
+                   checksum: "f36d56ef45e29caae910a458494e30b0843e9d1460bd26e8d0f994f875eceef6"
                ),
 //        .binaryTarget(
 //                    name: "maxFramework",
