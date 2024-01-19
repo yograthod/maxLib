@@ -10,8 +10,8 @@ let package = Package(
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "MaxLib",targets: ["maxFramework"]),
-        //.library(name: "maxFramework", targets: ["maxFramework"]),
+        .library(name: "MaxLib",targets: ["MaxLib"]),
+        .library(name: "maxFramework", targets: ["maxFramework"]),
 //        .library(name: "maxFrameworkLocal", targets: ["maxFrameworkLocal"])
         
     ],
