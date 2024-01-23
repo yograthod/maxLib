@@ -25,7 +25,7 @@ let package = Package(
         .binaryTarget(
                    name: "maxFramework",
                    url:"https://github.com/yograthod/package-xcframework/releases/download/1.0.0/maxFramework.xcframework.zip",
-                   checksum: "c92214a9da2dbcff7cc7324daf72cfbd629c5b44ceeb9e420368a981cae8e8c1"
+                   checksum: "202ad3b5ed63eff773127789b72dd29820157ae4145674de95c4e528d4c60ebc"
                ),
 //        .binaryTarget(
 //                    name: "maxFramework",
