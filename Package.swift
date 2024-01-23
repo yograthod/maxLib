@@ -24,8 +24,8 @@ let package = Package(
         //.target(name: "MaxLib"),
         .binaryTarget(
                    name: "maxFramework",
-                   url:"https://drive.google.com/file/d/1DE7kHG9NMlRD4mUJ-T7bdU8EFUCAi8bL/view?usp=drive_link/maxFramework.xcframework.zip",
-                   checksum: "f36d56ef45e29caae910a458494e30b0843e9d1460bd26e8d0f994f875eceef6"
+                   url:"https://github.com/yograthod/package-xcframework/releases/download/1.0.0/maxFramework.xcframework.zip",
+                   checksum: "c92214a9da2dbcff7cc7324daf72cfbd629c5b44ceeb9e420368a981cae8e8c1"
                ),
 //        .binaryTarget(
 //                    name: "maxFramework",
