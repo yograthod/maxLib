@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "MaxLib",
+    name: "maxFramework",
     platforms: [// Only add support for iOS 12 and up.
         .iOS(.v12)
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "MaxLib",targets: ["MaxLib"]),
+        //.library(name: "MaxLib",targets: ["MaxLib"]),
         .library(name: "maxFramework", targets: ["maxFramework"]),
 //        .library(name: "maxFrameworkLocal", targets: ["maxFrameworkLocal"])
         
@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(name: "MaxLib"),
+        //.target(name: "MaxLib"),
         .binaryTarget(
                    name: "maxFramework",
                    url:"https://drive.google.com/file/d/1DE7kHG9NMlRD4mUJ-T7bdU8EFUCAi8bL/view?usp=drive_link/maxFramework.xcframework.zip",
